@@ -20,10 +20,12 @@ object TiDB {
   ds.setPassword("")
   ds.setMaximumPoolSize(256)
 
+  val cs = for (i <- 1 to 16) yield ds.getConnection()
+
   def test = {
-    val db = ds.getConnection()
-    db.createStatement().execute(s"INSERT INTO accounts (id, balance) VALUES ('${UUID.randomUUID().toString}', ${Random.nextInt()})")
-    db.close()
+//    val db = ds.getConnection()
+    cs(Math.abs(Random.nextInt() % 16)).createStatement().execute(s"INSERT INTO accounts (id, balance) VALUES ('${UUID.randomUUID().toString}', ${Random.nextInt()})")
+//    db.close()
     "Hello, world!"
   }
 }
