@@ -34,3 +34,8 @@ cd cockroach-latest.linux-amd64
 
 ## 测试A 100%写0%读
 [Benchmark.png](Benchmark.png)
+
+结论：
+1.MongoDB的写入性能还是远远高于NewSQL的，而且随着访问的增多，性能没有下降，反而请求少的时候没有完全发挥
+2.TiDB的写入性能在前期要比CockroachDB，但是随着访问量的增多，性能下降明显，只有最初的一半，甚至低于CockroachDB
+3.CockroachDB的性能虽然最差，但是非常平稳
