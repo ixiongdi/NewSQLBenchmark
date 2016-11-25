@@ -33,3 +33,4 @@ cd cockroach-latest.linux-amd64
 ./cockroach
 
 ## 测试A 100%写0%读
+[Benchmark.png](Benchmark.png)
