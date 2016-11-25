@@ -13,13 +13,12 @@ import com.zaxxer.hikari.HikariDataSource
 
 import scala.util.Random
 
-object TiDB {
+object MemSQL {
   val ds = new HikariDataSource()
-  ds.setJdbcUrl("jdbc:mysql://0.0.0.0:4000/bank?useSSL=false")
+  ds.setJdbcUrl("jdbc:mysql://192.168.1.127:3306/bank?useSSL=false")
   ds.setUsername("root")
   ds.setPassword("")
-  ds.setMaximumPoolSize(256)
-
+  ds.setMaximumPoolSize(128)
   def test = {
     val db = ds.getConnection()
     db.createStatement().execute(s"INSERT INTO accounts (id, balance) VALUES ('${UUID.randomUUID().toString}', ${Random.nextInt()})")
@@ -31,16 +30,16 @@ object TiDB {
 /**
   * Created by xiongdi on 11/24/16.
   */
-object TiDBTest extends App {
+object MemSQLTest extends App {
   implicit val actorSystem = ActorSystem()
 
   implicit val system = IOSystem()
 
-  Server.basic("tidb-server", 9000) {
+  Server.basic("memsql-server", 9001) {
     new HttpService(_) {
       def handle = {
         case request@Get on Root => {
-          Callback.successful(request.ok(TiDB.test))
+          Callback.successful(request.ok(MemSQL.test))
         }
       }
     }
