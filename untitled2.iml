@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/scala" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/scala" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.11.8" level="project" />
+    <orderEntry type="library" name="Maven: com.tumblr:colossus_2.11:0.8.1" level="project" />
+    <orderEntry type="library" name="Maven: com.tumblr:colossus-metrics_2.11:0.8.1" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.akka:akka-actor_2.11:2.3.9" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe:config:1.2.1" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.akka:akka-agent_2.11:2.3.9" level="project" />
+    <orderEntry type="library" name="Maven: org.scala-stm:scala-stm_2.11:0.7" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.akka:akka-testkit_2.11:2.3.9" level="project" />
+    <orderEntry type="library" name="Maven: com.github.nscala-time:nscala-time_2.11:1.2.0" level="project" />
+    <orderEntry type="library" name="Maven: joda-time:joda-time:2.3" level="project" />
+    <orderEntry type="library" name="Maven: org.joda:joda-convert:1.2" level="project" />
+    <orderEntry type="library" name="Maven: org.postgresql:postgresql:9.4.1212" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.40" level="project" />
+    <orderEntry type="library" name="Maven: com.zaxxer:HikariCP:2.5.1" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.21" level="project" />
+    <orderEntry type="library" name="Maven: org.mongodb:casbah-commons_2.11:3.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.mongodb:mongo-java-driver:3.2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.mongodb:casbah-core_2.11:3.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.mongodb:casbah-query_2.11:3.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.mongodb:casbah-gridfs_2.11:3.1.1" level="project" />
+    <orderEntry type="library" name="Maven: com.sparkjava:spark-core:2.5.3" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-server:9.3.6.v20151106" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-http:9.3.6.v20151106" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-util:9.3.6.v20151106" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-io:9.3.6.v20151106" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-webapp:9.3.6.v20151106" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-xml:9.3.6.v20151106" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-servlet:9.3.6.v20151106" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-security:9.3.6.v20151106" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:websocket-server:9.3.6.v20151106" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:websocket-common:9.3.6.v20151106" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:websocket-client:9.3.6.v20151106" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:websocket-servlet:9.3.6.v20151106" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:websocket-api:9.3.6.v20151106" level="project" />
+  </component>
+</module>
